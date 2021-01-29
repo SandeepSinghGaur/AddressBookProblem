@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AddressBook
 {
-    class AddressBookOperation
+   class AddressBookOperation
     {
         public static List<Person> people = new List<Person>();
         public static void Add_Contact()
@@ -67,6 +67,39 @@ namespace AddressBook
                 }
             }
 
+        }
+        public Person DetectPerson()
+        {
+            Console.WriteLine("enter name of person ");
+            String name = Console.ReadLine();
+            foreach (Person person in people)
+            {
+                if (person.Equals(name))
+                {
+                    return person;
+                }
+            }
+            return null;
+        }
+
+        public  void DeletPerson()
+        {
+            Person personDelet = DetectPerson();
+            people.Remove(personDelet);
+        }
+
+
+        public static void DisplayAddressBook()
+        {
+            foreach (Person person in people)
+            {
+                Console.WriteLine(person.GetName());
+                Console.WriteLine(person.GetPhoneNumber());
+                Console.WriteLine(person.GetState());
+                Console.WriteLine(person.GetCity());
+                Console.WriteLine(person.Getzip());
+                Console.WriteLine(person.GetEmailAddress());
+            }
         }
     }
 }

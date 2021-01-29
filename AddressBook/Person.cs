@@ -12,6 +12,7 @@ namespace AddressBook
         public string state;
         public string zip_number;
         public string email_id;
+        public string phoneNumber;
         public Person(string fname, string lname, string city, string state, string zip, string email)
         {
             this.first_name = fname;
@@ -21,6 +22,30 @@ namespace AddressBook
             this.zip_number = zip;
             this.email_id = email;
         }
+        public string GetName()
+        {
+            return this.first_name;
+        }
+        public string GetPhoneNumber()
+        {
+            return this.phoneNumber;
+        }
+        public string GetState()
+        {
+            return this.state;
+        }
+        public string GetCity()
+        {
+            return this.city;
+        }
+        public string Getzip()
+        {
+            return this.zip_number;
+        }
+        public string GetEmailAddress()
+        {
+            return this.email_id;
+        }
         public void SetFname(string fname)
         {
             this.first_name = fname;
@@ -29,11 +54,11 @@ namespace AddressBook
         {
             this.last_name = lname;
         }
-        public void CityName(string lname)
+        public void CityName(string city)
         {
             this.city = city;
         }
-        public void StateName(string lname)
+        public void StateName(string state)
         {
             this.state = state;
         }
