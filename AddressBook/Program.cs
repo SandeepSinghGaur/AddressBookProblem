@@ -8,7 +8,8 @@ namespace AddressBook
         {
             Console.WriteLine("Welcome to Address Book System !");
             //AddressBookOperation.Add_Contact();
-            AddressBookOperation.Edit_Contact();
+            //AddressBookOperation.Edit_Contact();
+            AddressBookOperation.Delete_Contact();
         }
     }
 }
