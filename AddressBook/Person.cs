@@ -21,5 +21,29 @@ namespace AddressBook
             this.zip_number = zip;
             this.email_id = email;
         }
+        public void SetFname(string fname)
+        {
+            this.first_name = fname;
+        }
+        public void SetLname(string lname)
+        {
+            this.last_name = lname;
+        }
+        public void CityName(string lname)
+        {
+            this.city = city;
+        }
+        public void StateName(string lname)
+        {
+            this.state = state;
+        }
+        public void ZipNumber(string zip)
+        {
+            this.zip_number = zip;
+        }
+        public void EmailId(string email)
+        {
+            this.email_id = email;
+        }
     }
 }
